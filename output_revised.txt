@@ -1,0 +1,7 @@
+
+testGetAllIssueBooks=true
+testIssueBook=true
+testBookQuantityIsNotNull=true
+testBookISBNIsNotNull=true
+testSaveBook=true
+testGetAllBooks=true

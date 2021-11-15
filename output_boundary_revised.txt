@@ -1,0 +1,12 @@
+
+testBookNameMinThree=true
+testBookQuantityMinOne=true
+testBookIsbnLengthMaxTen=true
+testBookIsbnLengthMinTen=true
+testBookIssueDateIsPastOrPresent=true
+testBookNameNotNull=true
+testBookIssueIsbnAlreadyExists=true
+testBookQuantityNotNull=true
+testBookStreamIsFixed=true
+testBookIsbnNotNull=true
+testBookNameMaxHundred=true

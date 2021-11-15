@@ -1,0 +1,5 @@
+
+testBookIsbnAlreadyExists=true
+testInvalidBookQuantityException=true
+testBookIssueBookNotAvailableException=true
+testBookIssueISBNDoesNotExistsException=true
