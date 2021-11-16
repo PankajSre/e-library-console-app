@@ -23,6 +23,7 @@ class BookIssueExceptionTest {
 	@BeforeAll
 	public static void setUp() {
 		inventory = new BookInventory();
+		inventory.books = MasterData.getBookList();
 	}
 
 	@AfterAll
@@ -33,8 +34,7 @@ class BookIssueExceptionTest {
 	@Test()
 	public void testBookIssueBookNotAvailableException() throws IOException {
 		Book book = MasterData.getBookData();
-		book.setIsbn("1234567892");
-		book.setQuantity(0);
+		book.setIsbn("2345678901");
 		BookNotAvailableException exception = Assertions.assertThrows(BookNotAvailableException.class, () -> {
 			inventory.issueBook(book.getIsbn(), "Rohit");
 		});

@@ -23,6 +23,7 @@ class BookExceptionTest {
 	@BeforeAll
 	public static void setUp() {
 		inventory = new BookInventory();
+		inventory.books = MasterData.getBookList();
 	}
 
 	@AfterAll

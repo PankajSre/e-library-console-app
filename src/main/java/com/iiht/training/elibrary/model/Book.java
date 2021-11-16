@@ -12,6 +12,7 @@ public class Book {
 	private String stream;
 
 	public Book() {
+		
 	}
 
 	public Book(Integer id, String isbn, String name, Integer quantity, String publication, String stream) {

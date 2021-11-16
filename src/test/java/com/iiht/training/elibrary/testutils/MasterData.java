@@ -39,7 +39,7 @@ public class MasterData {
 		book.setPublication("Tech Media");
 		book.setStream("Science");
 		book.setIsbn("2345678901");
-		book.setQuantity(10);
+		book.setQuantity(0);
 		books.add(book);
 		return books;
 	}

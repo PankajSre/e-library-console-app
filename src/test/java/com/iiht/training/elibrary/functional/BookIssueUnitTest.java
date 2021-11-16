@@ -28,6 +28,8 @@ class BookIssueUnitTest {
 	@BeforeAll
 	public static void setUp() {
 		inventory = new BookInventory();
+		inventory.issuedBooks = MasterData.getBookIssueList();
+		inventory.books = MasterData.getBookList();
 	}
 
 	@AfterAll
@@ -45,6 +47,7 @@ class BookIssueUnitTest {
 	@Test
 	public void testIssueBook() throws IOException {
 		BookIssue bookIssue = MasterData.getBookIssueData();
+		bookIssue.setIsbn("1234567890");
 		yakshaAssert(currentTest(), inventory.issueBook(bookIssue.getIsbn(), bookIssue.getStudentName()) ? true : false,
 				businessTestFile);
 	}
